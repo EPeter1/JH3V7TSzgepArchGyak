@@ -1,0 +1,50 @@
+jh3v7t@jh3v7t-VirtualBox:~$ passwd
+Changing password for jh3v7t.
+Current password:
+New password:
+Retype new password:
+passwd: password updated successfully
+jh3v7t@jh3v7t-VirtualBox:~$ man sh
+jh3v7t@jh3v7t-VirtualBox:~$ pwd
+/home/jh3v7t
+jh3v7t@jh3v7t-VirtualBox:~$ w
+ 21:22:01 up 14 min,  1 user,  load average: 0,06, 0,06, 0,02
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+jh3v7t   tty7     :0               21:07   14:37  11.12s  0.21s cinnamon-session --session cinnamon
+jh3v7t@jh3v7t-VirtualBox:~$ last -5
+jh3v7t   tty7         :0               Mon Oct  9 21:07    gone - no logout
+reboot   system boot  5.15.0-86-generi Mon Oct  9 21:07   still running
+jh3v7t   tty7         :0               Mon Oct  9 18:27 - 19:59  (01:32)
+reboot   system boot  5.15.0-76-generi Mon Oct  9 18:26 - 19:59  (01:32)
+jh3v7t   tty7         :0               Wed Oct  4 20:47 - 20:51  (00:04)
+
+wtmp begins Wed Oct  4 20:03:21 2023
+jh3v7t@jh3v7t-VirtualBox:~$ who
+jh3v7t   tty7         2023-10-09 21:07 (:0)
+jh3v7t@jh3v7t-VirtualBox:~$ finger
+Login     Name            Tty      Idle  Login Time   Office     Office Phone
+jh3v7t    Erdelyi Peter   tty7       17  Oct  9 21:07 (:0)
+jh3v7t@jh3v7t-VirtualBox:~$ finger jh3v7t
+Login: jh3v7t         			Name: Erdelyi Peter
+Directory: /home/jh3v7t             	Shell: /bin/bash
+On since Mon Oct  9 21:07 (CEST) on tty7 from :0
+   17 minutes 9 seconds idle
+No mail.
+No Plan.
+jh3v7t@jh3v7t-VirtualBox:~$ echo "Szia!" | write viktor
+write: viktor is not logged in
+jh3v7t@jh3v7t-VirtualBox:~$ man date
+jh3v7t@jh3v7t-VirtualBox:~$ date +%Y
+2023
+jh3v7t@jh3v7t-VirtualBox:~$ ps
+    PID TTY          TIME CMD
+   2205 pts/0    00:00:00 bash
+   2650 pts/0    00:00:00 ps
+jh3v7t@jh3v7t-VirtualBox:~$ kill 2650
+bash: kill: (2650) - No such process
+jh3v7t@jh3v7t-VirtualBox:~$ kill 2205
+jh3v7t@jh3v7t-VirtualBox:~$ ps
+    PID TTY          TIME CMD
+   2205 pts/0    00:00:00 bash
+   2651 pts/0    00:00:00 ps
+jh3v7t@jh3v7t-VirtualBox:~$ clear
