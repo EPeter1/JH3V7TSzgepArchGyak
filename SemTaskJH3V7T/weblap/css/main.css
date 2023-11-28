@@ -1,0 +1,18 @@
+body {
+    background-image: url('../kepek/hatter.jpg');
+}
+
+ul {
+    line-height: 150%
+}
+
+ol {
+    line-height: 150%
+}
+
+.utemterv li::before {
+    content: "hét: ";
+    border-radius: 1px;
+    padding-inline: 1px;
+    margin-inline-end: 1px;
+}
